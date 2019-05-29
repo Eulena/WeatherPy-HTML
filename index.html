@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherPy</title>
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+       </script>
+<link   rel="stylesheet" 
+        href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand no-margins" href="index.html">WeatherPy</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                        <li><a href="comparison.html">
+                        <span class="glyphicon glyphicon-transfer">
+                        </span>
+                        Plot Comparison
+                    </a></li>
+                    <li><a href="data.html">
+                        <span class="glyphicon glyphicon-th">
+                        </span>
+                        Data
+                    </a></li> 
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temperature.html">Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="cloud.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Wind</a></li>
+                            </ul>
+                            </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-12 border">
+                <h1>WeatherPy: Latitude and Weather</h1>
+                <p class=border>
+                    <img src="Images/Latitude_vs_Max Temp.png" alt="Latitude vs. Temperature Plot">
+                    </br>
+                    </br>
+                    </br>
+                    This analysis was performed using a series of API calls from OpenWeatherMapAPI to collect a dataset of over 500 cities. Scatter plot was used to demonstrate the various aspects of the weather vs. latitude. 
+                    The goal is to demonstrate the relationship between latitude versus temperature, humidity, cloudiness, and wind speed; and by which is the closest to the earth's equator. Results show that the following cities of Hermanus, Busselton, Jamestown, 
+                    and Cidreira holds lower latitudes, while Lebu is the only city that hold a higher latitude. Hence, the lower the latitude, the warmer the region becomes, while the higher the latitude, the colder the area becomes. Also, the data suggest that there are more cities with a relative humidity greater than 70% and wind speed less than 
+                    5 miles per hour. Based on research, the majority of the cities generated are in the Southern hemisphere, as shown below:  
+                    </br>
+                    </br>
+                    First, Hermanus, South Africa is in both the Northern and Southern Hemisphere.
+                    Second, Lebu, Chile is in both the Southern hemisphere and and Western hemisphere. 
+                    Third, Busselton and Jamestown, Australia are in both the Southern Hemisphere and the Eastern hemisphere. 
+                    Lastly, Cidreira, Brazil is in the Western, Northern and Southern hemispheres.
+                    </br>
+                    </br>
+                    In conclusion, the following cities namely: Hermanus, Busselton, Jamestown, and Cidreira goes to show that the climate in these cities are of tropical climate and typically has high humidity; 
+                    And since these cities are part of the Southern Hemisphere, it is the closest to the equator.
+                    </br>
+                    </br>
+                </p>
+
+
+            </div>
+            <div class= "container text-center">
+                <br /> &nbsp;
+                <h2>Visualizations</h2>
+                <div class="btn-group-vertical">
+                    <div class="row"
+                    <div class="col-sm-4">
+                        <a  target="_blank" href="temperature.html" 
+                            class="btn btn-info" role="button">
+                            Temperature
+                        </a>
+                        <a  target="_blank" href="cloud.html" 
+                            class="btn btn-info" role="button">
+                            Cloudiness
+                        </a>
+                        <a  target="_blank" href="humidity.html" 
+                            class="btn btn-info" role="button">
+                            Humidity
+                        </a>
+                        <a  target="_blank" href="wind.html" 
+                            class="btn btn-info" role="button">
+                            Wind
+                        </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

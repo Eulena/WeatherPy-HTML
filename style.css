@@ -1,0 +1,83 @@
+nav {
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1 {
+    color: black;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    text-transform: Uppercase;
+    margin-bottom: -5px;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 35px;
+}
+
+h3 {
+    color: #D6F8D6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p img {
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 12px;
+}
+
+p {
+    margin: 20px;
+    padding: 25px;
+    background-color: #ABD2FA;
+}
+
+table {
+    color: #3b413c;
+    background-color: #D6F8D6;
+}
+
+.plot-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20 px;
+    width: 66%
+}
+
+.plot-info {
+    text-align: center;
+}
+
+p.plot-info {
+    font-size: 15px;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn {
+    margin: 25px;
+    padding: 20px;
+    background-color: blueviolet !important;
+}
+
+.container {
+    margin: auto;
+}
+
+.no-margins {
+    margin-left: 0 !important
+}

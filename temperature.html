@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitudes & Temperature</title>
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <link   rel="stylesheet" 
+            href="WEB/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" 
+                            class="navbar-toggle" 
+                            data-toggle="collapse" 
+                            data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand no-margins" href="index.html">
+                        WeatherPy
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="comparison.html">
+                        <span class="glyphicon glyphicon-transfer">
+                        </span>
+                        Plot Comparison
+                    </a></li>
+                    <li><a href="data.html">
+                        <span class="glyphicon glyphicon-th">
+                        </span>
+                        Data
+                    </a></li> 
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temperature.html">Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="cloud.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Wind</a></li>
+                            </ul>
+                            </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+<body>
+    <div class="container">
+        <h1 class="plot-info">Latitude vs. Temperature</h1>
+        <a target="_blank" href="Images/Latitude_vs_Max Temp.png">
+            <img src="Images/Latitude_vs_Max Temp.png" alt="Latitude and Temperature Plot" class="plot-img">
+        </a>
+        <p class="plot-info">
+            This plot of latitude and temperature illustrates how the temperature increases as it gets closer to the equator (0 degrees latitude).
+            Temperatures above 90 degrees farenheit (90F) are observed almost exclusively between -20 and 20 degrees latitude.  
+            </br>
+            </br>
+            Temperatures of below 20F are extremely low and are highly concentrated in cities in the northern hemisphere between 40 and 80 degrees latitude.  
+            There were no cities in the southern hemisphere with temperatures below 40F.  Cold temperatures were seemed to be influenced by date, as these 
+            weather observations were recorded in November when the northern hemisphere is closer to winter and the southern hemisphere closer to summer.
+        </p>
+    </div>
+</body>
+
+</html>
+© 2019 GitHub, Inc.
